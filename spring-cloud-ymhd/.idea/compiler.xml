@@ -8,6 +8,7 @@
         <outputRelativeToContentRoot value="true" />
         <module name="eureka" />
         <module name="eureka-client" />
+        <module name="feign" />
         <module name="ribbon" />
       </profile>
     </annotationProcessing>
@@ -16,6 +17,7 @@
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
       <module name="eureka" options="-parameters" />
       <module name="eureka-client" options="-parameters" />
+      <module name="feign" options="-parameters" />
       <module name="ribbon" options="-parameters" />
     </option>
   </component>

@@ -27,6 +27,7 @@
         <module>eureka</module>
         <module>eureka-client</module>
         <module>ribbon</module>
+        <module>feign</module>
     </modules>
 
     <dependencies>
