@@ -1,0 +1,40 @@
+server:
+  port: 9527
+
+spring:
+  application:
+    name: eureka-server
+
+eureka:
+  instance:
+    hostname: master #服务注册中心实例的主机名
+    prefer-ip-address: false
+  client:
+    serviceUrl:
+      defaultZone: http://backup1:9528/eureka/,http://backup2:9529/eureka/
+    register-with-eureka: false #  默认为 true。设为 false，仅作为服务中心，不作为服务客户端
+    fetch-registry: false # 默认为true。设为false，不从服务中心检索注册的服务。
+  server:
+    eviction-interval-timer-in-ms: 5000 #清理间隔（单位毫秒，默认是60*1000）
+    enable-self-preservation: false # 默认为true，设为false，关闭自我保护
+    # Eureka Server 在运行期间会去统计心跳失败比例在 15 分钟之内是否低于 85%
+    renewal-percent-threshold: 0.49 # 默认是0.85，本地单机测试设为0.49
+
+
+    #
+    #eureka.instance.hostname=master
+      #
+      #eureka.client.register-with-eureka=false
+      #
+      #eureka.client.fetch-registry=false
+      #
+      #eureka.instance.preferIpAddress=true
+      #
+      #eureka.server.enableSelfPreservation=false
+      #
+      #eureka.client.serviceUrl.defaultZone=http://backup1:1112/eureka/,http://backup2:1113/eureka/
+      #---------------------
+      #作者：大道化简
+      #来源：CSDN
+    #原文：https://blog.csdn.net/sunhuiliang85/article/details/76222517
+    #版权声明：本文为博主原创文章，转载请附上博文链接！
