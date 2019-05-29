@@ -28,6 +28,7 @@
         <module>eureka-client</module>
         <module>ribbon</module>
         <module>feign</module>
+        <module>eureka-hystrix-dashboard</module>
     </modules>
 
     <dependencies>
