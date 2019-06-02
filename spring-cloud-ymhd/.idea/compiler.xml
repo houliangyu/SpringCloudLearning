@@ -10,6 +10,7 @@
         <module name="eureka-client" />
         <module name="eureka-hystrix-dashboard" />
         <module name="eureka-turbine" />
+        <module name="eureka-zuul" />
         <module name="feign" />
         <module name="ribbon" />
       </profile>
@@ -21,6 +22,7 @@
       <module name="eureka-client" options="-parameters" />
       <module name="eureka-hystrix-dashboard" options="-parameters" />
       <module name="eureka-turbine" options="-parameters" />
+      <module name="eureka-zuul" options="-parameters" />
       <module name="feign" options="-parameters" />
       <module name="ribbon" options="-parameters" />
     </option>

@@ -29,6 +29,7 @@
         <module>ribbon</module>
         <module>feign</module>
         <module>eureka-hystrix-dashboard</module>
+        <module>eureka-zuul</module>
     </modules>
 
     <dependencies>

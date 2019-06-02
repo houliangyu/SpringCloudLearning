@@ -11,6 +11,7 @@
         <option value="$PROJECT_DIR$/feign/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-hystrix-dashboard/pom.xml" />
         <option value="$PROJECT_DIR$/eureka-turbine/pom.xml" />
+        <option value="$PROJECT_DIR$/eureka-zuul/pom.xml" />
       </list>
     </option>
   </component>
